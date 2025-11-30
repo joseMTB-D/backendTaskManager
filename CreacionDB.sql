@@ -1,0 +1,11 @@
+CREATE SCHEMA  IF NOT EXISTS task_Manager_DB;
+
+USE task_Manager_DB;
+
+CREATE TABLE IF NOT EXISTS tareas (
+    id LONG PRIMARY KEY AUTO_INCREMENT,
+    nombre VARCHAR(150),
+    descripcion VARCHAR(255),
+    completada BOOLEAN,
+    fechaCreacion TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
